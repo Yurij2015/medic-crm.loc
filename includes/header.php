@@ -37,11 +37,24 @@ if (!isset ($layout_context)) {
                     <li><a href="/main.php">Главная</a></li>
                     <li><a href="/add_klient.php">Запись на прием</a></li>
                     <li><a href="/index.php">Информация</a></li>
-                    <li><a href="/login.php">Войти</a></li>
-                    <li><a href="/logout.php">Выйти</a></li>
-                    <li><a href="/registration.php">Регистрация</a></li>
+                    <?php
+                    if (!$_SESSION["admin_id"]) {
+                        echo "<li><a href='/login.php'>Войти</a></li>";
+                    }
+                    ?>
+                    <?php
+                    if ($_SESSION["admin_id"]) {
+                        echo "<li><a href='/logout.php'>Выход</a></li>";
+                    }
+                    ?>
+                    <?php
+                    if (!$_SESSION["admin_id"]) {
+                        echo "<li><a href='/registration.php'>Регистрация</a></li>";
+                    }
+                    ?>
+<!--                    <li><a href="/registration.php">Регистрация</a></li>-->
                 </ul>
-                <!-- script-for-menu -->
+
                 <script>
                     $("span.menu").click(function () {
                         $("ul.nav").slideToggle(300, function () {

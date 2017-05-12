@@ -5,7 +5,6 @@
 <?php $layout_context = "admin"; ?>
 <?php include 'includes/header.php'; ?>
 <?php find_selected_page(); ?>
-
     <!-- admin page -->
     <div class="news">
         <div class="container">
@@ -62,14 +61,26 @@
                     </div>
                 </div>
                 <div class="col-md-4 blog-right">
-                    <h2>Меню публичной части</h2>
-                    <?php echo navigation($current_subject, $current_page); ?>
+
+                    <?php
+                    if (htmlentities($_SESSION["username"]) == 'Admin' or htmlentities($_SESSION["username"]) == 'Admin_2') {
+                       echo "<h2>Меню публичной части</h2>";
+                        echo navigation($current_subject, $current_page);
+                    }
+                    ?>
+                    <?php// echo navigation($current_subject, $current_page); ?>
                     <h2>Меню</h2>
                     <ul>
-                        <li><a href="list_zakaz.php">Список заказов</a></li>
-                        <li><a href="manage_admins.php">Управление администраторами</a></li>
-                        <li><a href="manage_table.php">Изменить данные публичной части</a></li>
-                        <li><a href="new_subject.php">Добавить раздел в публичную часть</a></li>
+                        <?php
+                        if (htmlentities($_SESSION["username"]) == 'Admin' or htmlentities($_SESSION["username"]) == 'Admin_2') {
+                            echo "<li><a href='list_zakaz.php'>Список заявок</a></li>
+                        <li><a href='manage_admins.php'>Управление администраторами</a></li>
+                        <li><a href='manage_table.php'>Изменить данные публичной части</a></li>";
+                        } else {
+                            $layout_context = "user";
+                            echo "<li><a href='user_page.php'>Страница пользователя " . htmlentities($_SESSION['username']) ." </a></li>";
+                        }
+                        ?>
                         <li><a href="logout.php">Выход</a></li>
                     </ul>
                 </div>
