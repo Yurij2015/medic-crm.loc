@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mediccrm@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mediccrm">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="123"/>
+    <schema id="4" parent="1" name="ajax_crud"/>
+    <schema id="5" parent="1" name="bdgoscentr"/>
+    <schema id="6" parent="1" name="biometr-data"/>
+    <schema id="7" parent="1" name="cfschoolsite"/>
+    <schema id="8" parent="1" name="cinema"/>
+    <schema id="9" parent="1" name="clinika"/>
+    <schema id="10" parent="1" name="clinik_crm"/>
+    <schema id="11" parent="1" name="cms"/>
+    <schema id="12" parent="1" name="db_18"/>
+    <schema id="13" parent="1" name="diplom_studhouse"/>
+    <schema id="14" parent="1" name="dle"/>
+    <schema id="15" parent="1" name="ecommerce1"/>
+    <schema id="16" parent="1" name="firefighting"/>
+    <schema id="17" parent="1" name="furniture"/>
+    <schema id="18" parent="1" name="geforce"/>
+    <schema id="19" parent="1" name="goodkey"/>
+    <schema id="20" parent="1" name="hypertext-system"/>
+    <schema id="21" parent="1" name="idz"/>
+    <schema id="22" parent="1" name="IDZ_2"/>
+    <schema id="23" parent="1" name="information_schema"/>
+    <schema id="24" parent="1" name="is_eds"/>
+    <schema id="25" parent="1" name="kadastr-order"/>
+    <schema id="26" parent="1" name="kindergarten"/>
+    <schema id="27" parent="1" name="kompservis"/>
+    <schema id="28" parent="1" name="minicms"/>
+    <schema id="29" parent="1" name="montag"/>
+    <schema id="30" parent="1" name="mydb"/>
+    <schema id="31" parent="1" name="mysql"/>
+    <schema id="32" parent="1" name="netbiz"/>
+    <schema id="33" parent="1" name="new_oop"/>
+    <schema id="34" parent="1" name="parser"/>
+    <schema id="35" parent="1" name="performance_schema"/>
+    <schema id="36" parent="1" name="portfolio"/>
+    <schema id="37" parent="1" name="promosite"/>
+    <schema id="38" parent="1" name="regcak"/>
+    <schema id="39" parent="1" name="scientists"/>
+    <schema id="40" parent="1" name="servis"/>
+    <schema id="41" parent="1" name="simple_aja_form"/>
+    <schema id="42" parent="1" name="sinilink"/>
+    <schema id="43" parent="1" name="sql"/>
+    <schema id="44" parent="1" name="stroj-dom"/>
+    <schema id="45" parent="1" name="sys"/>
+    <schema id="46" parent="1" name="testsfdrupal"/>
+    <schema id="47" parent="1" name="trudoustrojstvo"/>
+    <schema id="48" parent="1" name="video"/>
+    <schema id="49" parent="1" name="wp_roots"/>
+    <schema id="50" parent="1" name="yii2advanced"/>
+    <schema id="51" parent="1" name="yiibasic"/>
+    <schema id="52" parent="1" name="isportal"/>
+    <schema id="53" parent="1" name="isstart"/>
+    <schema id="54" parent="1" name="transportcomp"/>
+    <schema id="55" parent="1" name="zhkh"/>
+    <table id="56" parent="2" name="admins"/>
+    <table id="57" parent="2" name="pages"/>
+    <table id="58" parent="2" name="subjects"/>
+    <table id="59" parent="2" name="zakaz"/>
+    <column id="60" parent="56" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="61" parent="56" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="56" name="hashed_password">
+      <Position>3</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="63" parent="56" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="64" parent="57" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="65" parent="57" name="subject_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="57" name="menu_name">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="57" name="position">
+      <Position>4</Position>
+      <DataType>int(3)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="57" name="visible">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="57" name="content">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <index id="70" parent="57" name="subject_id">
+      <ColNames>subject_id</ColNames>
+    </index>
+    <key id="71" parent="57" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="72" parent="58" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="73" parent="58" name="menu_name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="58" name="position">
+      <Position>3</Position>
+      <DataType>int(3)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="75" parent="58" name="visible">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="76" parent="58" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="77" parent="59" name="idzakaz">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="78" parent="59" name="name_lastname_klienta">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="79" parent="59" name="homeadress">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="59" name="date">
+      <Position>4</Position>
+      <DataType>varchar(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="59" name="phonenumber">
+      <Position>6</Position>
+      <DataType>varchar(44)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="59" name="message">
+      <Position>5</Position>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="59" name="email">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="84" parent="59" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idzakaz</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

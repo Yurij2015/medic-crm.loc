@@ -1,0 +1,35 @@
+.subjects a {
+    background: #F8F8F8;
+    border-bottom: 1px #B3C0C6 solid;
+    padding: 8px 0 8px 15px;
+    display: block;
+    height: 40px;
+
+}
+
+.subjects a:hover {
+    text-decoration: none;
+
+    background: #e7ecf4
+}
+
+ul.subjects {
+    margin: 1em 0;
+    padding-left: 0;
+    list-style: none
+}
+
+ul.pages {
+    padding-left: 2em;
+
+}
+
+.selected {
+    font-weight: 700
+}
+
+ul.subjects a:hover {
+    text-decoration: none;
+
+}
+
