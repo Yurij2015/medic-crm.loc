@@ -41,30 +41,27 @@ if (isset($_POST['submit'])) {
 <?php include 'includes/header.php'; ?>
     <!-- Форма авторизации на сайте -->
     <div class="blog">
-    <div class="typo">
-        <div class="container">
+        <div class="typo">
+            <div class="container">
+                <div class="contact-grid">
+                    <h2>Регистрация на сайте</h2>
+                    <div class="col-md-12 contact-grid-left">
+                        <h3 style="color: green">  <?php echo message(); ?></h3>
+                        <h3 style="color: red"><?php echo form_errors($errors); ?></h3>
+                        <form action="registration.php" method="post">
+                            <input type="text" name="username"
+                                   required=""
+                                   style="margin-bottom: 15px; height: 48px; width: 100%">
 
-            <div class="con1tact-grid">
-                <h2>Регистрация на сайте</h2>
-                <div class="col-md-12 contact-grid-left">
-                    <h3 style="color: green">  <?php echo message(); ?></h3>
-                    <h3 style="color: red"> <?php $errors = errors(); ?></h3>
-                    <h3 style="color: red"><?php echo form_errors($errors); ?></h3>
-                    <form action="registration.php" method="post">
-                        <input type="text" value="Логин" name="username"
-                               onfocus="this.value = '';"
-                               onblur="if (this.value == '') {this.value = 'Логин';}" required=""
-                               style="margin-bottom: 15px; width: 100%">
-
-                        <input type="password" value="Пароль" name="password" onfocus="this.value = '';"
-                               onblur="if (this.value == '') {this.value = 'Пароль';}" required=""
-                               class="form-control" style="height: 48px;">
-                        <hr>
-                        <input type="submit" name="submit" value="Регистрация">
-                    </form>
+                            <input type="password" value="Пароль" name="password" onfocus="this.value = '';"
+                                   required=""
+                                   class="form-control" style="height: 48px;">
+                            <hr>
+                            <input type="submit" name="submit" value="Регистрация">
+                        </form>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 <?php include 'includes/footer.php'; ?>

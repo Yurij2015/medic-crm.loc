@@ -28,9 +28,7 @@
                     <ul>
                         <?php
                         if (htmlentities($_SESSION["username"]) == 'Admin' or htmlentities($_SESSION["username"]) == 'Admin_2') {
-                            echo "<li><a href='list_zakaz.php'>Список заявок</a></li>
-                        <li><a href='manage_admins.php'>Управление администраторами</a></li>
-                        <li><a href='manage_table.php'>Изменить данные публичной части</a></li>";
+                            include 'admin_menu.php';
                         } else {
                             $layout_context = "user";
                             echo "<li><a href='user_page.php'>Страница пользователя " . htmlentities($_SESSION['username']) . " </a></li>";
