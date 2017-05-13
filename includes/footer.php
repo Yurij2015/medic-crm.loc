@@ -41,7 +41,7 @@
             <div class="footer-grds-left">
                 <ul>
                     <li><a href="#">Главная |</a></li>
-                    <li><a href="/add_klient.php">Написать нам |</a></li>
+                    <li><a href="/contactform.php">Вопрос специалисту |</a></li>
                     <li><a href="/manage_table.php">Админ-панель</a></li>
                 </ul>
 
