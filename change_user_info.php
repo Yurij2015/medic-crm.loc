@@ -60,6 +60,7 @@
                                 <?php
                             }
                             ?>
+                        </form>
                             <div class="clearfix"></div>
                     </div>
                 </div>

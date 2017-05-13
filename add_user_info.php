@@ -19,7 +19,6 @@
                         <h4 style="color: red"> <?php $errors = errors(); ?></h4>
                         <h4 style="color: red"><?php echo form_errors($errors); ?></h4>
                         <form action="processing_add_user_info.php" method="post">
-
                             <input type="text" name="firstname" value="<?php echo $user['firstname'] ?>"
                                    placeholder="Имя" class="form-control"
                                    required
@@ -44,6 +43,7 @@
                             <hr>
                             <input type="submit" name="submit" class="form-control btn-primary"
                                    value="Добавить" style="height: 48px;">
+                        </form>
                             <div class="clearfix"></div>
                     </div>
                 </div>

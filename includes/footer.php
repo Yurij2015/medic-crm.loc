@@ -2,39 +2,39 @@
 <div class="footer">
     <div class="container">
         <div class="footer-grids">
-            <div class="col-md-3 footer-grid">
-                <h3>Полезные ссылки</h3>
-                <ul>
-                    <li><a href="#">Министерство</a></li>
-                    <li><a href="#">Новости медицины</a></li>
-                    <li><a href="#">Современное оборудование</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h3>Наши специалисты</h3>
-                <ul>
-                    <li><a href="#">Исследования</a></li>
-                    <li><a href="#">Научные разработки</a></li>
-                    <li><a href="#">Практическа</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h3>Для пациентов</h3>
-                <ul>
-                    <li><a href="#">Наше оборудование</a></li>
-                    <li><a href="#">Перечень услуг</a></li>
-                    <li><a href="#">Общая информация</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h3>Наши ресурсы</h3>
-                <ul>
-                    <?php // echo navigation($current_subject, $current_page); ?>
-                    <li><a href="#">Наши сайты</a></li>
-                    <li><a href="#">Мы в социальных сетях</a></li>
-                    <li><a href="#">О нас пишут</a></li>
-                </ul>
-            </div>
+<!--            <div class="col-md-3 footer-grid">-->
+<!--                <h3>Полезные ссылки</h3>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Министерство</a></li>-->
+<!--                    <li><a href="#">Новости медицины</a></li>-->
+<!--                    <li><a href="#">Современное оборудование</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-md-3 footer-grid">-->
+<!--                <h3>Наши специалисты</h3>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Исследования</a></li>-->
+<!--                    <li><a href="#">Научные разработки</a></li>-->
+<!--                    <li><a href="#">Практическа</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-md-3 footer-grid">-->
+<!--                <h3>Для пациентов</h3>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Наше оборудование</a></li>-->
+<!--                    <li><a href="#">Перечень услуг</a></li>-->
+<!--                    <li><a href="#">Общая информация</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-md-3 footer-grid">-->
+<!--                <h3>Наши ресурсы</h3>-->
+<!--                <ul>-->
+<!--                    --><?php //// echo navigation($current_subject, $current_page); ?>
+<!--                    <li><a href="#">Наши сайты</a></li>-->
+<!--                    <li><a href="#">Мы в социальных сетях</a></li>-->
+<!--                    <li><a href="#">О нас пишут</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
             <div class="clearfix"></div>
         </div>
         <div class="footer-grds">

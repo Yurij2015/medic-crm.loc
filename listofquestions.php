@@ -8,51 +8,44 @@
     <!--table of client -->
     <div class="typo">
         <div class="container">
-
             <div class="news-grid">
                 <div class="col-md-8 blog-left">
                     <div class="blog-left-grid">
                         <div class="page-header">
-                            <h3 class="bars">Обращения пациентов и клиентов</h3>
+                            <h3 class="bars">Список вопросов</h3>
                         </div>
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th>Клиент</th>
-                                <th>Адрес</th>
-                                <th>Телефон</th>
+                                <th>Имя</th>
+                                <th>Email</th>
+                                <th>Вопрос</th>
                                 <th>Дата</th>
-                                <th>E-mail</th>
-                                <th>Сообщение</th>
                             </tr>
                             </thead>
                             <tbody>
                             <?php
-                            $query = "SELECT name_lastname_klienta, homeadress, date, message, phonenumber, email FROM zakaz ";
+                            $query = "SELECT name, email, question, date FROM contactform ";
                             $result = mysqli_query($connection, $query);
                             confirm_query($result);
                             ?>
                             <?php
-                            while ($master = mysqli_fetch_assoc($result)) {
+                            while ($question = mysqli_fetch_assoc($result)) {
                                 ?>
                                 <tr>
-                                    <td><?php echo $master["name_lastname_klienta"]; ?></td>
-                                    <td><?php echo $master["homeadress"]; ?></td>
-                                    <td><?php echo $master["phonenumber"]; ?></td>
-                                    <td><?php echo $master["date"]; ?></td>
-                                    <td><?php echo $master["email"]; ?></td>
-                                    <td><?php echo $master["message"]; ?></td>
+                                    <td><?php echo $question["name"]; ?></td>
+                                    <td><?php echo $question["email"]; ?></td>
+                                    <td><?php echo $question["question"]; ?></td>
+                                    <td><?php echo $question["date"]; ?></td>
                                 </tr>
                                 <?php
                             }
                             ?>
                             </tbody>
                         </table>
-
                         <div class="clearfix"></div>
                     </div>
                 </div>
-
                 <div class="col-md-4 blog-right">
                     <h2>Меню</h2>
                     <ul>
@@ -69,12 +62,8 @@
                         <li><a href="logout.php">Выход</a></li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
     </div>
     <!-- //table of client -->
-
-
 <?php include 'includes/footer.php';
