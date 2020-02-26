@@ -5,7 +5,7 @@ if (!isset ($layout_context)) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Medical CRM</title>
+    <title>Электронная очередь</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -29,7 +29,7 @@ if (!isset ($layout_context)) {
         <!-- header -->
         <div class="header">
             <div class="logo">
-                <a href="index.php"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Medical CRM<span>Мы работаем для Вас!</span></a>
+                <a href="index.php"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>MedicQueue<span>Электронная очередь!</span></a>
             </div>
             <div class="top-nav">
                 <span class="menu"><img src="/images/menu.png" alt=" "/></span>

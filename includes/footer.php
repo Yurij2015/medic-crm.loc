@@ -45,8 +45,7 @@
                     <li><a href="/manage_table.php">Админ-панель</a></li>
                 </ul>
 
-                <p>Copyright © <?php echo date("Y"); ?>, <a href="/">Информационнас система - Medical
-                        CRM<?php if ($layout_context == "admin  ") {
+                <p>Copyright © <?php echo date("Y"); ?>, <a href="/">Информационнас система электронной очереди<?php if ($layout_context == "admin  ") {
                             echo ": Панель администратора";
                         } ?></a></p>
             </div>

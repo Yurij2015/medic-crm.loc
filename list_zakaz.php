@@ -13,11 +13,12 @@
                 <div class="col-md-8 blog-left">
                     <div class="blog-left-grid">
                         <div class="page-header">
-                            <h3 class="bars">Обращения пациентов и клиентов</h3>
+                            <h3 class="bars">Электронная очередь на прием</h3>
                         </div>
                         <table class="table table-bordered">
                             <thead>
                             <tr>
+                                <th>Номер</th>
                                 <th>Клиент</th>
                                 <th>Адрес</th>
                                 <th>Телефон</th>
@@ -28,7 +29,7 @@
                             </thead>
                             <tbody>
                             <?php
-                            $query = "SELECT name_lastname_klienta, homeadress, date, message, phonenumber, email FROM zakaz ";
+                            $query = "SELECT idzakaz, name_lastname_klienta, homeadress, date, message, phonenumber, email FROM zakaz ";
                             $result = mysqli_query($connection, $query);
                             confirm_query($result);
                             ?>
@@ -36,6 +37,7 @@
                             while ($master = mysqli_fetch_assoc($result)) {
                                 ?>
                                 <tr>
+                                    <td><?php echo $master["idzakaz"]; ?></td>
                                     <td><?php echo $master["name_lastname_klienta"]; ?></td>
                                     <td><?php echo $master["homeadress"]; ?></td>
                                     <td><?php echo $master["phonenumber"]; ?></td>

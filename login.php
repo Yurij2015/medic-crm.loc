@@ -6,7 +6,6 @@
 $username = "";
 if (isset($_POST['submit'])) {
     // Обработка формы
-
     // проверка формы
     $required_fields = array("username", "password");
     validate_presences($required_fields);
